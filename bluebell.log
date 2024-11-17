@@ -1,0 +1,21 @@
+{"level":"DEBUG","time":"2024-11-17T20:03:10.492+0800","caller":"bluebell/main.go:43","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-11-17T20:04:02.417+0800","caller":"controller/user.go:18","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2024-11-17T20:04:02.417+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-17T20:04:31.938+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"ERROR","time":"2024-11-17T20:05:09.715+0800","caller":"controller/user.go:18","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2024-11-17T20:05:09.715+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-17T20:16:56.194+0800","caller":"bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-11-17T20:16:56.194+0800","caller":"bluebell/main.go:91","msg":"Server exiting"}
+{"level":"INFO","time":"2024-11-17T20:16:56.195+0800","caller":"mysql/mysql.go:41","msg":"MySQL close success..."}
+{"level":"DEBUG","time":"2024-11-17T20:17:00.766+0800","caller":"bluebell/main.go:43","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-11-17T20:17:03.440+0800","caller":"controller/user.go:18","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2024-11-17T20:17:03.440+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005048}
+{"level":"INFO","time":"2024-11-17T20:18:37.102+0800","caller":"bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-11-17T20:18:37.102+0800","caller":"bluebell/main.go:91","msg":"Server exiting"}
+{"level":"INFO","time":"2024-11-17T20:18:37.102+0800","caller":"mysql/mysql.go:41","msg":"MySQL close success..."}
+{"level":"DEBUG","time":"2024-11-17T20:18:41.690+0800","caller":"bluebell/main.go:43","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-11-17T20:18:42.443+0800","caller":"controller/user.go:18","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2024-11-17T20:18:42.443+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-17T20:18:55.040+0800","caller":"bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-11-17T20:18:55.040+0800","caller":"bluebell/main.go:91","msg":"Server exiting"}
+{"level":"INFO","time":"2024-11-17T20:18:55.040+0800","caller":"mysql/mysql.go:41","msg":"MySQL close success..."}

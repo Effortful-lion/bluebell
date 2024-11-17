@@ -1,0 +1,30 @@
+app:
+  name: "bluebell" # 程序名字
+  mode: "dev" # 模式（开发？测试？正式？）
+  port: 8080
+  version: "v1.0.0"
+  machine_id: 1
+  start_time: "2020-07-01"
+
+log:
+  level: "debug" # 日志等级
+  filename: "bluebell.log" # 日志文件名
+  max_size: 200 # 日志的文件大小
+  max_age: 30 # 日志的存储时间
+  max_backups: 7 # 日志备份数量
+
+mysql:
+  host: "127.0.0.1"
+  port: "3306"
+  user: "root"
+  password: "mysql123"
+  dbname: "sql_demo"
+  max_idle_conns: 50
+  max_open_conns: 200
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  db: 1
+  pool_size: 100
+  password: 123456 
