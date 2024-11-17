@@ -13,6 +13,7 @@ import (
 //注意：如果使用全局变量的结构体存储配置文件信息，那么在配置文件发生实时变化的时候就需要利用回调函数进行再一次的反序列化，更新结构体
 
 // Conf 全局变量，用来保存程序的所有配置信息
+// 这里的mapstructure标签，简单的说是一个映射：配置文件名 -> 结构体名
 var Conf = new(Config)
 
 type Config struct {
@@ -29,7 +30,6 @@ type AppConfig struct {
 	Port int `mapstructure:"port"`
 	StartTime string `mapstructure:"start_time"`
 	MachineID int `mapstructure:"machine_id"`
-
 	*LogConfig `mapstructure:"log"`
 	*MysqlConfig `mapstructure:"mysql"`
 	*RedisConfig `mapstructure:"redis"`
@@ -47,8 +47,8 @@ type MysqlConfig struct {
     Host string `mapstructure:"host"`
     User string `mapstructure:"user"`
     Password string `mapstructure:"password"`
-    DbName string `mapstructure:"dbname"`
-    Port string `mapstructure:"port"`
+    DB string `mapstructure:"dbname"`
+    Port int `mapstructure:"port"`
     MaxOpenConns int `mapstructure:"max_open_conns"`
     MaxIdleConns int `mapstructure:"max_idle_conns"`
 }
@@ -78,7 +78,7 @@ func Init()(err error){
 	if err := viper.Unmarshal(Conf);err != nil {
 		fmt.Printf("viper.Unmarshal failed,err: %v",err)
 	}
-	fmt.Printf("Conf:%v\n",Conf.AppConfig.Name)
+
 	viper.WatchConfig()	 // 监控配置文件
 	viper.OnConfigChange(func(in fsnotify.Event) {
 		fmt.Println("配置文件被修改")

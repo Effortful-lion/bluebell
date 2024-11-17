@@ -6,14 +6,21 @@ import (
 	"bluebell/pkg/snowflake"
 )
 
-func SignUp(p *models.ParamSignUp) {
+func SignUp(p *models.ParamSignUp) (err error){
 	// 判断用户名是否存在
-	mysql.QueryUserByUsername()
+	if err = mysql.CheckUserExit(p.Username);err != nil {
+		return err
+	}
 	// 生成ID
-	snowflake.GenID()
-	//密码加密
+	userID := snowflake.GenID()
+	//构造一个用户实例
+	user := &models.User{
+		UserID:   userID,
+		Username: p.Username,
+		Password: p.Password,
+	}
 
 	//保存进数据库
-	mysql.InsertUser()
+	return mysql.InsertUser(user)
 
 }

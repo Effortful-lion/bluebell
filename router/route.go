@@ -15,6 +15,11 @@ func SetupRouter()(*gin.Engine){
 	// 创建路由：使用自定义的日志和panic覆盖中间件
 	//gin.SetMode(gin.ReleaseMode)  //设置为生产环境
 	r := gin.New()
+
+	// 设置我信任的代理：设置一个具体的值来明确指定可信任的代理
+	trustedProxies := []string{"192.168.1.0/24"}
+    r.SetTrustedProxies(trustedProxies)
+
 	r.Use(logger.GinLogger(),logger.GinRecovery(true))
 	// 注册业务路由
 	r.POST("/signup",controller.SignUpHandler)
