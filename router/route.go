@@ -28,6 +28,9 @@ func SetupRouter(mode string)(*gin.Engine){
 	// 注册业务路由
 	r.POST("/signup",controller.SignUpHandler)
 
+	// 登录业务路由
+	r.POST("/login",controller.LoginHandler)
+
 	// 没有路由
 	r.NoRoute(func(ctx *gin.Context) {
 		ctx.JSON(404,gin.H{

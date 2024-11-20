@@ -3,12 +3,30 @@ package mysql
 import (
 	"bluebell/models"
 	"crypto/md5"
+	"database/sql"
 	"encoding/hex"
 	"errors"
 	"fmt"
 )
 
-var secret = "bluebell"
+var secret = "bluebell"   // TODO:这里的secret的作用是什么？
+
+// 查询指定用户名的用户
+func GetUserByName(username string) (user *models.User, err error) {
+	user = new(models.User)
+	sqlStr := `select password, username from user where username = ?`
+	err = db.Get(user, sqlStr, username)
+	// 调试信息：
+	fmt.Println(user)
+	if err == sql.ErrNoRows {
+		return nil,errors.New("用户不存在")
+	}
+	if err != nil { 
+		// 查询出错
+		return nil,err
+	}
+	return user,err 
+}
 
 // 查询指定用户名的用户是否存在
 func CheckUserExit(username string) (err error) {
@@ -26,7 +44,8 @@ func CheckUserExit(username string) (err error) {
 
 func InsertUser(user *models.User) (err error){
 	//执行插入语句
-	user.Password = encryptPassword(user.Password)
+	user.Password = EncryptPassword(user.Password)
+	fmt.Println(user.Password)
 	sqlStr := `insert into user(user_id,username,password) values (?,?,?)`
 	_, err = db.Exec(sqlStr, user.UserID, user.Username, user.Password)// 语句 + 几个参数
 	if err != nil {
@@ -35,7 +54,8 @@ func InsertUser(user *models.User) (err error){
 	return
 }
 
-func encryptPassword(oPwd string) string {
+// 加密函数
+func EncryptPassword(oPwd string) string {
 	// 对密码进行加密
 	h := md5.New()
 	// 将用户密码作为参数传进去
