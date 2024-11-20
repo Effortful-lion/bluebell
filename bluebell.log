@@ -136,3 +136,12 @@
 {"level":"DEBUG","time":"2024-11-20T20:46:23.626+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
 {"level":"ERROR","time":"2024-11-20T20:46:24.973+0800","caller":"controller/user.go:73","msg":"logic.Signup failed","error":"用户已存在"}
 {"level":"INFO","time":"2024-11-20T20:46:24.974+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0016136}
+{"level":"DEBUG","time":"2024-11-20T22:42:48.301+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-20T22:45:10.052+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0017442}
+{"level":"ERROR","time":"2024-11-20T22:45:35.037+0800","caller":"controller/user.go:74","msg":"logic.Signup failed","error":"用户已存在"}
+{"level":"INFO","time":"2024-11-20T22:45:35.037+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005746}
+{"level":"INFO","time":"2024-11-20T22:46:57.320+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005566}
+{"level":"INFO","time":"2024-11-20T22:49:28.837+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.001033}
+{"level":"INFO","time":"2024-11-20T22:51:48.770+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011125}
+{"level":"DEBUG","time":"2024-11-20T23:05:16.389+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-20T23:05:27.830+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}

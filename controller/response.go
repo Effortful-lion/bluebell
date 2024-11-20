@@ -11,9 +11,9 @@ import (
 
 // 响应结构体
 type ResponseData struct {
-	Code ResCode    `json: "code"` // 自定义的code
-	Msg  any   `json: "msg"`  // 自定义的msg
-	Data any 	`json: "data"`// 自定义的数据
+	Code ResCode    `json:"code"` // 自定义的code
+	Msg  any   `json:"msg"`  // 自定义的msg
+	Data any 	`json:"data"`// 自定义的数据
 }
 
 

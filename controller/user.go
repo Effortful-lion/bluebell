@@ -5,8 +5,6 @@ import (
 	"bluebell/logic"
 	"bluebell/models"
 	"errors"
-	"fmt"
-
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator"
 	"go.uber.org/zap"
@@ -30,10 +28,8 @@ func LoginHandler(c *gin.Context) {
 		ResponseErrorWithMsg(c,CodeInvalidParam,removeTopStruct(errs.Translate(trans)))
 		return
 	}
-	// 开发时调试信息：打印参数信息
-	fmt.Println(p)
 	// 业务处理 和 返回响应
-	if user,err := logic.Login(p);err != nil || user == nil{
+	if token,err := logic.Login(p);err != nil || token == ""{
 		// 登录失败: 用户名或密码错误
 		if err == mysql.ErrorUserNotExist{
 			ResponseError(c,CodeUserNotExist)
@@ -41,7 +37,8 @@ func LoginHandler(c *gin.Context) {
 		ResponseError(c,CodeInvalidPassword)
 		return
 	}else{
-		ResponseSuccess(c,user)
+		// 登录成功
+		ResponseSuccess(c,token)
 		return
 	}
 }
@@ -65,8 +62,6 @@ func SignUpHandler(c *gin.Context) {
 		ResponseErrorWithMsg(c,CodeInvalidParam,removeTopStruct(errs.Translate(trans)))
 		return
 	}
-	// 开发时调试信息
-	fmt.Println(p)
 	// 2. 业务处理
 	if err := logic.SignUp(p);err != nil {
 		//注册失败：用户名已存在
