@@ -1,6 +1,6 @@
 app:
   name: "bluebell" # 程序名字
-  mode: "dev" # 模式（开发？测试？正式？）
+  mode: "dev" # 模式（开发develop？测试？发布release？）
   port: 8080
   version: "v1.0.0"
   machine_id: 1

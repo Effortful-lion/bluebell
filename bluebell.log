@@ -90,3 +90,14 @@
 {"level":"DEBUG","time":"2024-11-17T23:16:25.924+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
 {"level":"INFO","time":"2024-11-17T23:16:28.495+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.003425}
 {"level":"INFO","time":"2024-11-17T23:17:20.730+0800","caller":"logger/logger.go:76","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010193}
+{"level":"DEBUG","time":"2024-11-20T12:41:40.260+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-20T12:43:25.616+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-11-20T12:43:51.963+0800","caller":"controller/user.go:19","msg":"SignUp with invalid param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag\nKey: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2024-11-20T12:43:51.963+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005051}
+{"level":"INFO","time":"2024-11-20T12:44:06.143+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0342137}
+{"level":"INFO","time":"2024-11-20T12:44:36.278+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0020767}
+{"level":"DEBUG","time":"2024-11-20T12:44:51.810+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-20T12:45:26.857+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-20T12:45:29.238+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000949}
+{"level":"DEBUG","time":"2024-11-20T12:51:30.688+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-20T12:51:34.537+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0007428}

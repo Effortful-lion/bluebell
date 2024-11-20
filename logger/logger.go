@@ -18,7 +18,7 @@ import (
 )
 
 // InitLogger 初始化Logger
-func Init(cfg *settings.LogConfig) (err error) {
+func Init(cfg *settings.LogConfig,mode string) (err error) {
 	writeSyncer := getLogWriter(
 		cfg.Filename,
 		cfg.MaxSize, 
@@ -30,8 +30,17 @@ func Init(cfg *settings.LogConfig) (err error) {
 	if err != nil {
 		return
 	}
-	core := zapcore.NewCore(encoder, writeSyncer, l)
-
+	var core zapcore.Core
+	if mode == "dev"{
+		//开发模式，日志输出到终端
+		consoleEncoder := zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig())
+		core = zapcore.NewTee(
+			zapcore.NewCore(encoder, writeSyncer, l),
+			zapcore.NewCore(consoleEncoder, zapcore.Lock(os.Stdout), zapcore.DebugLevel),
+		)
+	}else{
+		core = zapcore.NewCore(encoder, writeSyncer, l)
+	}
 // 为什么不能直接赋值给zap.L()？
 // 	zap.L()返回的是一个全局的logger实例，它被设计为全局唯一的，
 // 	不能被外部直接修改。

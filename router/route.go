@@ -10,10 +10,14 @@ import (
 //注册路由
 
 
-func SetupRouter()(*gin.Engine){
+func SetupRouter(mode string)(*gin.Engine){
 
 	// 创建路由：使用自定义的日志和panic覆盖中间件
-	//gin.SetMode(gin.ReleaseMode)  //设置为生产环境
+
+	if mode == gin.ReleaseMode{
+		gin.SetMode(gin.ReleaseMode)  //设置gin框架为发布模式
+	}
+	//gin.SetMode(gin.ReleaseMode)  //设置gin框架为发布模式：不会有gin-debug信息
 	r := gin.New()
 
 	// 设置我信任的代理：设置一个具体的值来明确指定可信任的代理
