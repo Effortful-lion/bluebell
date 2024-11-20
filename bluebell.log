@@ -123,3 +123,16 @@
 {"level":"INFO","time":"2024-11-20T18:56:21.858+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010238}
 {"level":"DEBUG","time":"2024-11-20T18:56:57.950+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
 {"level":"INFO","time":"2024-11-20T18:56:59.252+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011329}
+{"level":"DEBUG","time":"2024-11-20T18:58:43.797+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-20T18:58:45.176+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0013584}
+{"level":"INFO","time":"2024-11-20T18:59:20.874+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006372}
+{"level":"INFO","time":"2024-11-20T18:59:30.076+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006109}
+{"level":"DEBUG","time":"2024-11-20T20:41:07.667+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-20T20:41:17.721+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0115617}
+{"level":"INFO","time":"2024-11-20T20:44:01.012+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005026}
+{"level":"ERROR","time":"2024-11-20T20:44:05.995+0800","caller":"controller/user.go:73","msg":"logic.Signup failed","error":"用户已存在"}
+{"level":"INFO","time":"2024-11-20T20:44:05.995+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005038}
+{"level":"INFO","time":"2024-11-20T20:44:24.455+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0025772}
+{"level":"DEBUG","time":"2024-11-20T20:46:23.626+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-11-20T20:46:24.973+0800","caller":"controller/user.go:73","msg":"logic.Signup failed","error":"用户已存在"}
+{"level":"INFO","time":"2024-11-20T20:46:24.974+0800","caller":"logger/logger.go:85","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0016136}

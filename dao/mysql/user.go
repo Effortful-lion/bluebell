@@ -11,6 +11,12 @@ import (
 
 var secret = "bluebell"   // TODO:这里的secret的作用是什么？
 
+var (
+	// 定义为常量，避免多次使用，提高代码复用性
+	ErrorUserExist = errors.New("用户已存在")
+	ErrorUserNotExist = errors.New("用户不存在")
+)
+
 // 查询指定用户名的用户
 func GetUserByName(username string) (user *models.User, err error) {
 	user = new(models.User)
@@ -19,7 +25,7 @@ func GetUserByName(username string) (user *models.User, err error) {
 	// 调试信息：
 	fmt.Println(user)
 	if err == sql.ErrNoRows {
-		return nil,errors.New("用户不存在")
+		return nil,ErrorUserNotExist 
 	}
 	if err != nil { 
 		// 查询出错
@@ -37,7 +43,7 @@ func CheckUserExit(username string) (err error) {
 		return err
 	}
 	if count > 0 {
-		return errors.New("用户名已存在")
+		return ErrorUserExist
 	}
 	return
 }
