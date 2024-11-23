@@ -5,12 +5,16 @@ package jwt
 import (
 	"errors"
 	"time"
-
 	"github.com/golang-jwt/jwt/v4"
+	"github.com/spf13/viper"
 )
 
 // 设置超时时间
-const TokenExpireDuration = time.Minute * 2
+//var TokenExpireDuration = time.Second * 30
+
+//这个不可以在这里声明，因为配置文件还未加载完，就执行获取操作，使得获取到值为零值
+//var TokenExpireDuration = viper.GetInt("auth.jwt_expire")
+
 // 定义 secret 秘钥
 var Mysecret = []byte("i love golang")
 
@@ -31,13 +35,15 @@ type MyClaims struct {
 
 // 使用指定的secret生成返回token
 func GenToken(userID int64, username string) (string, error) {
+	// 在这里 用viper获取 ，确保配置文件已经被读取完
+	var TokenExpireDuration = viper.GetInt("auth.jwt_expire")
 	// 创建一个我们自己的声明的数据
 	c := MyClaims{
 		UserID: userID,
 		Username: username,
 		RegisteredClaims: jwt.RegisteredClaims{
 			Issuer: "bluebell",
-			ExpiresAt: jwt.NewNumericDate(time.Now().Add(TokenExpireDuration)),
+			ExpiresAt: jwt.NewNumericDate(time.Now().Add(time.Duration(TokenExpireDuration)*time.Second)),
 		},
 	}
 	// 使用指定的签名算法创建签名对象

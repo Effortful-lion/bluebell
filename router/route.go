@@ -25,22 +25,26 @@ func SetupRouter(mode string)(*gin.Engine){
     r.SetTrustedProxies(trustedProxies)
 
 	r.Use(logger.GinLogger(),logger.GinRecovery(true))
+
+	// 设置路由组，有利于后期的扩展
+	v1 := r.Group("/api/v1")
+
 	// 注册业务路由
-	r.POST("/signup",controller.SignUpHandler)
+	v1.POST("/signup",controller.SignUpHandler)
 
 	// 登录业务路由
-	r.POST("/login",controller.LoginHandler)
+	v1.POST("/login",controller.LoginHandler)
 
 	// 一切访问资源的路由
 	// token 放在了一个 名为 Authorization 的 http 请求头中
-	r.GET("/ping", middlewares.JWTAuthMiddleware(),middlewares.OnlyOneTokenMiddleware(),func(c *gin.Context){
-		// 在中间件中进行 判断请求头中是否有 有效的jwt，有则继续，没有则驳回请求
-		// 正常访问全部资源
-		c.JSON(200,gin.H{
-			"msg":"访问到了所有资源",
-		})
+	
+	// 使用中间件
+	v1.Use(middlewares.JWTAuthMiddleware(),middlewares.OnlyOneTokenMiddleware())
 
-	})
+	// 使用代码块：社区相关路由
+	{
+		v1.GET("/community",controller.CommunityHandler)
+	}
 
 	// 没有路由
 	r.NoRoute(func(ctx *gin.Context) {

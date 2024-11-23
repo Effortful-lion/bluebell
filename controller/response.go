@@ -6,7 +6,7 @@ import (
 )
 
 
-// 创建  响应结构体和对应（成功、失败）的响应方法
+// 创建  向前端 响应结构体信息和对应（成功、失败状态码）的响应方法
 
 
 // 响应结构体
@@ -43,7 +43,7 @@ func ResponseErrorWithMsg(c *gin.Context, code ResCode, msg any){
 
 //响应成功信息：code+成功信息+数据
 func ResponseSuccess(c *gin.Context, data any){
-	
+	// json方法自动将下面的数据装箱为json类型
 	c.JSON(http.StatusOK,&ResponseData{
 		Code:CodeSuccess,
 		Msg:CodeSuccess.Msg(),

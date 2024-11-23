@@ -41,7 +41,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		if err != nil {
 			c.JSON(http.StatusOK, gin.H{
 				"code": controller.CodeInvalidToken,
-				"msg":  "无效的Token: " + err.Error(),
+				"msg":  "Token过期: " + err.Error(),
 			})
 			c.Abort()
 			return

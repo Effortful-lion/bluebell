@@ -22,8 +22,6 @@ func GetUserByName(username string) (user *models.User, err error) {
 	user = new(models.User)
 	sqlStr := `select password, username from user where username = ?`
 	err = db.Get(user, sqlStr, username)
-	// 调试信息：
-	fmt.Println(user)
 	if err == sql.ErrNoRows {
 		return nil,ErrorUserNotExist 
 	}
@@ -51,7 +49,6 @@ func CheckUserExit(username string) (err error) {
 func InsertUser(user *models.User) (err error){
 	//执行插入语句
 	user.Password = EncryptPassword(user.Password)
-	fmt.Println(user.Password)
 	sqlStr := `insert into user(user_id,username,password) values (?,?,?)`
 	_, err = db.Exec(sqlStr, user.UserID, user.Username, user.Password)// 语句 + 几个参数
 	if err != nil {

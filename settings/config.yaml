@@ -6,6 +6,9 @@ app:
   machine_id: 1
   start_time: "2020-07-01"
 
+auth:
+  jwt_expire: 60  #过期时间一天
+
 log:
   level: "debug" # 日志等级
   filename: "bluebell.log" # 日志文件名
