@@ -9,8 +9,8 @@ import (
 	"github.com/golang-jwt/jwt/v4"
 )
 
-// 设置
-const TokenExpireDuration = time.Hour * 2
+// 设置超时时间
+const TokenExpireDuration = time.Minute * 2
 // 定义 secret 秘钥
 var Mysecret = []byte("i love golang")
 

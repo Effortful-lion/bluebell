@@ -2,6 +2,7 @@ package logic
 
 import (
 	"bluebell/dao/mysql"
+	"bluebell/dao/redis"
 	"bluebell/models"
 	"bluebell/pkg/jwt"
 	"bluebell/pkg/snowflake"
@@ -26,6 +27,10 @@ func Login(p *models.ParamLogin) (token string, err error) {
 	if err != nil {
 		return "", err
 	}
+
+	// 生成token后，将token存储在redis中
+	redis.SetUserToken(token, user.UserID)
+
 	// 作出响应
 	return token, nil
 }

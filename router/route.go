@@ -3,7 +3,7 @@ package router
 import (
 	"bluebell/controller"
 	"bluebell/logger"
-
+	"bluebell/middlewares"
 	"github.com/gin-gonic/gin"
 )
 
@@ -31,13 +31,13 @@ func SetupRouter(mode string)(*gin.Engine){
 	// 登录业务路由
 	r.POST("/login",controller.LoginHandler)
 
-
 	// 一切访问资源的路由
-	// TODO: 将jwt的解析和认证全部封装到中间件中（注意对比视频的中间件的写法，自行匹配apifox怎么写），通过校验，后正常访问资源
-	r.GET("/ping", func(c *gin.Context){
+	// token 放在了一个 名为 Authorization 的 http 请求头中
+	r.GET("/ping", middlewares.JWTAuthMiddleware(),middlewares.OnlyOneTokenMiddleware(),func(c *gin.Context){
+		// 在中间件中进行 判断请求头中是否有 有效的jwt，有则继续，没有则驳回请求
 		// 正常访问全部资源
 		c.JSON(200,gin.H{
-			"msg":"pong",
+			"msg":"访问到了所有资源",
 		})
 
 	})

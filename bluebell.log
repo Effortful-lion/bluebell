@@ -145,3 +145,184 @@
 {"level":"INFO","time":"2024-11-20T22:51:48.770+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011125}
 {"level":"DEBUG","time":"2024-11-20T23:05:16.389+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
 {"level":"INFO","time":"2024-11-20T23:05:27.830+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-21T18:46:30.476+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-21T19:01:44.577+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0091635}
+{"level":"INFO","time":"2024-11-21T19:02:19.510+0800","caller":"logger/logger.go:85","msg":"/ping","status":404,"method":"POST","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-21T19:03:41.837+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-21T19:06:04.718+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-21T19:09:28.924+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-21T19:10:13.138+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005062}
+{"level":"INFO","time":"2024-11-21T19:11:38.428+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010261}
+{"level":"INFO","time":"2024-11-21T19:11:43.858+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006917}
+{"level":"DEBUG","time":"2024-11-22T22:13:45.927+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-22T22:48:47.690+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-22T22:49:13.996+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0017662}
+{"level":"DEBUG","time":"2024-11-22T22:59:21.410+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-22T22:59:23.486+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0007288}
+{"level":"DEBUG","time":"2024-11-23T15:30:29.130+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:41:46.337+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T15:42:15.192+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T15:47:02.427+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:47:28.117+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:47:32.465+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:52:29.981+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:52:40.572+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:53:32.247+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T15:53:43.240+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T15:54:35.646+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T15:55:23.709+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:13.609+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:22.702+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:27.855+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:30.141+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:31.330+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:36.307+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:00:45.086+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:02:06.336+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:02:19.022+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:02:21.694+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:02:39.153+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:02:44.931+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T16:03:49.501+0800","caller":"logger/logger.go:85","msg":"/","status":404,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T16:03:55.507+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T16:06:09.343+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:12:48.269+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:13:36.334+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:13:43.229+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T16:14:05.098+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T16:15:48.271+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T16:15:59.479+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0013966}
+{"level":"INFO","time":"2024-11-23T16:16:02.438+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T16:16:28.479+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T16:17:35.481+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T16:18:18.041+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:18:24.572+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:18:34.209+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:18:40.137+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T16:54:06.370+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T16:54:15.268+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0017376}
+{"level":"DEBUG","time":"2024-11-23T18:12:20.652+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:12:40.451+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:13:50.063+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:14:23.078+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0013262}
+{"level":"INFO","time":"2024-11-23T18:14:27.701+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005036}
+{"level":"INFO","time":"2024-11-23T18:14:49.243+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000504}
+{"level":"DEBUG","time":"2024-11-23T18:15:30.475+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:15:48.533+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:16:26.661+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:16:43.104+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010237}
+{"level":"DEBUG","time":"2024-11-23T18:18:36.093+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:19:08.549+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:19:34.292+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:19:52.882+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:20:19.570+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:20:30.070+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:20:35.965+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:20:42.321+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:20:50.580+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:20:59.030+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:21:09.397+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:21:21.833+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:21:49.829+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000505}
+{"level":"INFO","time":"2024-11-23T18:22:05.258+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:22:47.130+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:23:58.546+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015568}
+{"level":"INFO","time":"2024-11-23T18:24:12.154+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:24:30.618+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0013787}
+{"level":"DEBUG","time":"2024-11-23T18:25:30.097+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:25:44.575+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:25:56.545+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T18:26:07.355+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:26:18.117+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0014447}
+{"level":"INFO","time":"2024-11-23T18:26:34.591+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:28:08.921+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:28:21.148+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015871}
+{"level":"INFO","time":"2024-11-23T18:28:36.947+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:28:47.895+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:30:18.433+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:30:34.366+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:31:39.855+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:31:41.269+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:31:45.844+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:33:34.569+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:33:36.787+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:34:04.398+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006978}
+{"level":"INFO","time":"2024-11-23T18:34:13.208+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:48:37.079+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:48:51.406+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:50:03.950+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:50:11.393+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005116}
+{"level":"DEBUG","time":"2024-11-23T18:50:40.754+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:50:45.562+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005487}
+{"level":"INFO","time":"2024-11-23T18:51:42.322+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:52:46.681+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005776}
+{"level":"INFO","time":"2024-11-23T18:52:51.167+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005059}
+{"level":"INFO","time":"2024-11-23T18:52:57.075+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T18:53:48.278+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T18:54:55.727+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T18:55:51.753+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005067}
+{"level":"INFO","time":"2024-11-23T18:56:00.757+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010325}
+{"level":"INFO","time":"2024-11-23T18:56:08.247+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0002066}
+{"level":"INFO","time":"2024-11-23T18:56:59.563+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005041}
+{"level":"INFO","time":"2024-11-23T18:57:08.846+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005056}
+{"level":"INFO","time":"2024-11-23T18:58:54.730+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005036}
+{"level":"INFO","time":"2024-11-23T18:59:03.397+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010349}
+{"level":"INFO","time":"2024-11-23T18:59:14.233+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005083}
+{"level":"INFO","time":"2024-11-23T19:05:24.966+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0066527}
+{"level":"INFO","time":"2024-11-23T19:05:35.565+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T19:06:39.452+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T19:06:44.843+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0003313}
+{"level":"INFO","time":"2024-11-23T19:07:20.020+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T19:07:35.700+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000506}
+{"level":"INFO","time":"2024-11-23T19:07:37.315+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005045}
+{"level":"INFO","time":"2024-11-23T19:07:42.207+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T19:07:45.452+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005034}
+{"level":"INFO","time":"2024-11-23T19:07:48.856+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T19:07:50.999+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T19:07:53.024+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T19:07:54.148+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T19:09:04.329+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005041}
+{"level":"INFO","time":"2024-11-23T19:09:16.189+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000508}
+{"level":"INFO","time":"2024-11-23T19:11:27.657+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010419}
+{"level":"DEBUG","time":"2024-11-23T19:14:30.351+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T19:14:32.841+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T21:45:49.236+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T23:02:29.147+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:03:53.872+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005251}
+{"level":"INFO","time":"2024-11-23T23:04:06.243+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0013301}
+{"level":"INFO","time":"2024-11-23T23:04:16.919+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:05:09.544+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T23:06:13.631+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T23:07:15.724+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:07:32.200+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005066}
+{"level":"INFO","time":"2024-11-23T23:07:52.729+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015164}
+{"level":"INFO","time":"2024-11-23T23:08:02.195+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005038}
+{"level":"INFO","time":"2024-11-23T23:08:06.700+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000624}
+{"level":"INFO","time":"2024-11-23T23:08:11.999+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:08:14.336+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:08:16.140+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:08:17.863+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T23:09:07.133+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:09:18.050+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015452}
+{"level":"INFO","time":"2024-11-23T23:09:26.020+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:09:35.496+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T23:10:14.432+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:10:17.140+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010368}
+{"level":"INFO","time":"2024-11-23T23:10:26.020+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.000507}
+{"level":"INFO","time":"2024-11-23T23:10:28.212+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:10:36.018+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T23:15:56.246+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-23T23:18:52.461+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:19:33.482+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015862}
+{"level":"INFO","time":"2024-11-23T23:19:41.946+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:19:57.923+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T23:23:14.789+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:23:17.706+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010417}
+{"level":"INFO","time":"2024-11-23T23:23:25.249+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005055}
+{"level":"INFO","time":"2024-11-23T23:23:37.939+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"DEBUG","time":"2024-11-23T23:25:52.667+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-23T23:25:54.503+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011926}
+{"level":"INFO","time":"2024-11-23T23:26:03.212+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005081}
+{"level":"INFO","time":"2024-11-23T23:26:09.792+0800","caller":"logger/logger.go:85","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0007358}
+{"level":"INFO","time":"2024-11-23T23:26:18.392+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-23T23:26:29.536+0800","caller":"logger/logger.go:85","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005052}

@@ -35,7 +35,7 @@ func ResponseError(c *gin.Context, code ResCode){
 //错误的信息（较具体的原因，可自定义）
 func ResponseErrorWithMsg(c *gin.Context, code ResCode, msg any){
 	c.JSON(http.StatusOK,&ResponseData{
-		Code: code,
+		Code:code,
 		Msg:msg,
 		Data:nil,
 	})

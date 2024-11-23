@@ -87,6 +87,7 @@ func Init()(err error){
 			fmt.Printf("viper.Unmarshal change failed, err: %v", err)
 			// 可以在这里添加更完善的错误处理逻辑，比如尝试重新读取等操作
 		}
+		fmt.Println(Conf.AppConfig.Port)
 	})
 	return
 }
