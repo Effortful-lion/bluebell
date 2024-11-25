@@ -6,6 +6,9 @@ import (
 	"bluebell/models"
 	"bluebell/pkg/jwt"
 	"bluebell/pkg/snowflake"
+	"fmt"
+
+	"go.uber.org/zap"
 )
 
 // 用户登录
@@ -16,6 +19,7 @@ func Login(p *models.ParamLogin) (token string, err error) {
 	if user == nil {
 		return "", err
 	}
+	fmt.Println(user)
 	// 2. 用户存在，检查对应密码是否正确
 	// 密码加密后（在dao层进行密码处理）比较
 	PostPassword := mysql.EncryptPassword(p.Password)
@@ -27,9 +31,13 @@ func Login(p *models.ParamLogin) (token string, err error) {
 	if err != nil {
 		return "", err
 	}
-
 	// 生成token后，将token存储在redis中
-	redis.SetUserToken(token, user.UserID)
+	ID,err := mysql.GetIDByUserName(user.Username)
+	if err != nil {
+		zap.L().Error("mysql.GetIDByUserName() failed") 
+		return "", err
+	}
+	redis.SetUserToken(token, ID)
 
 	// 作出响应
 	return token, nil

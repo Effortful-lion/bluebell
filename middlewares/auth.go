@@ -8,6 +8,7 @@ import (
 	"bluebell/controller"
 	"bluebell/dao/redis"
 	"fmt"
+	"bluebell/dao/mysql"
 	//"time" 
 )
 
@@ -47,7 +48,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 			return
 		}
 
-		// TODO:尝试加一段代码，判断token过期（发现已经具备判断token过期的功能了）
+		// 尝试加一段代码，判断token过期（发现已经具备判断token过期的功能了）
 		// 判断令牌是否过期
         // if mc.ExpiresAt.IsZero() {
         //     c.JSON(http.StatusOK, gin.H{
@@ -66,8 +67,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
         //     c.Abort()
         //     return
         // }
-
-
+		
 		// 将当前请求的userID信息保存到请求的上下文context c中：
 		c.Set(controller.ContextUserIDKey, mc.UserID)
 		// 后续的处理请求的函数可以用c.Get("userId")来获取当前请求的用户信息
@@ -77,7 +77,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 
 
 
-// TODO: 但是只要用户名和密码正确，就会出现“相互顶号”的情况
+// 但是只要用户名和密码正确，就会出现“相互顶号”的情况
 // 基于token实现的只能一个用户登录的中间件:token格式正确，判断是否为同一用户（/时间/设备...）
 func OnlyOneTokenMiddleware() func(c *gin.Context) {
 	
@@ -89,8 +89,11 @@ func OnlyOneTokenMiddleware() func(c *gin.Context) {
 	// 判断新旧token是否一致
 		//如果不一致, 返回未登录//TODO:按道理应该有个验证码的业务，来确定使用哪一个token（这里默认可以“相互顶号”）
 		userID,_:= c.Get(controller.ContextUserIDKey)
-		redis_token,_ := redis.GetUserToken(userID.(int64))
-		fmt.Println(redis_token)
+		ID,err := mysql.GetIDByUserID(userID.(int64))
+		if err != nil { 
+			return 
+		}
+		redis_token,_ := redis.GetUserToken(ID)
 		if redis_token != new_token {
 			// redis.SetUserToken(new_token,userID.(int64))
 			c.JSON(http.StatusOK,gin.H{

@@ -43,7 +43,7 @@ func GenToken(userID int64, username string) (string, error) {
 		Username: username,
 		RegisteredClaims: jwt.RegisteredClaims{
 			Issuer: "bluebell",
-			ExpiresAt: jwt.NewNumericDate(time.Now().Add(time.Duration(TokenExpireDuration)*time.Second)),
+			ExpiresAt: jwt.NewNumericDate(time.Now().Add(time.Duration(TokenExpireDuration)*time.Hour)),
 		},
 	}
 	// 使用指定的签名算法创建签名对象

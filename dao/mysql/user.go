@@ -5,22 +5,28 @@ import (
 	"crypto/md5"
 	"database/sql"
 	"encoding/hex"
-	"errors"
 	"fmt"
 )
 
 var secret = "bluebell"   // TODO:这里的secret的作用是什么？
 
-var (
-	// 定义为常量，避免多次使用，提高代码复用性
-	ErrorUserExist = errors.New("用户已存在")
-	ErrorUserNotExist = errors.New("用户不存在")
-)
+// 查询指定用户名的用户id
+func GetIDByUserName(username string) (ID int64, err error) {
+	sqlStr := `select id from user where username = ?`
+	err = db.Get(&ID, sqlStr, username)
+	return
+}
+
+func GetIDByUserID(userID int64) (ID int64, err error) {
+	sqlStr := `select id from user where user_id = ?`
+	err = db.Get(&ID, sqlStr, userID)
+	return
+}
 
 // 查询指定用户名的用户
 func GetUserByName(username string) (user *models.User, err error) {
 	user = new(models.User)
-	sqlStr := `select password, username from user where username = ?`
+	sqlStr := `select user_id,password, username from user where username = ?`
 	err = db.Get(user, sqlStr, username)
 	if err == sql.ErrNoRows {
 		return nil,ErrorUserNotExist 
@@ -65,4 +71,20 @@ func EncryptPassword(oPwd string) string {
 	h.Write([]byte(secret))
 	// 将加密结果作为参数传进去 并 转换为字符串
 	return hex.EncodeToString(h.Sum([]byte(oPwd)))
+}
+
+// 根据用户ID获取用户信息
+func GetUserById(id int64) (user *models.User, err error) {
+	user = new(models.User)
+	// 查询用户
+	sqlStr := "select user_id, username from user where user_id = ?"
+	err = db.Get(user, sqlStr, id)
+	if err == sql.ErrNoRows {
+		return nil,ErrorUserNotExist 
+	}
+	if err != nil { 
+		// 查询出错
+		return nil,err
+	}
+	return
 }

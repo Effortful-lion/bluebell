@@ -2,6 +2,7 @@ package controller
 
 import (
 	"bluebell/logic"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
@@ -21,4 +22,24 @@ func CommunityHandler(c *gin.Context){
 	}
 	// 获取成功
 	ResponseSuccess(c,list)
+}
+
+func CommunityDetailHandler(c *gin.Context){
+	// 获取社区详情
+	// 1. 获取社区id(路径参数)
+	idStr := c.Param("id")
+	communityID,err := strconv.ParseInt(idStr,10,64)	// 转换为int64: 转换对象，base（指定进制），bitsize（指定位数范围）
+	if err != nil{
+		// 参数转换错误
+		ResponseError(c,CodeInvalidParam)
+		return
+	}
+	// 2. 根据id获取社区详情
+	data,err := logic.GetCommunityDetail(communityID)
+	if err != nil{
+		zap.L().Error("logic.GetCommunityDetail()获取社区详情失败",zap.Error(err))
+		ResponseError(c,CodeServerBusy)	// 不轻易将服务端报错暴露在外面
+		return
+	}
+	ResponseSuccess(c,data)
 }

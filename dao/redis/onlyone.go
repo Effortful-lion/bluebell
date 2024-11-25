@@ -5,7 +5,7 @@ package redis
 
 import "fmt"
 
-func SetUserToken(token string, userID int64) error {
+func SetUserToken(token string, ID int64) error {
 	// err := rdb.Set("token_user" + fmt.Sprint(userID),token,0)
 	// if err != nil {
 	// 	return err.Err()
@@ -13,10 +13,10 @@ func SetUserToken(token string, userID int64) error {
 	// // 查看是否修改成功
 	// fmt.Printf("rdb.Get(\"token_user\" + fmt.Sprint(userID)): %v\n", rdb.Get("token_user" + fmt.Sprint(userID)))
 	// return nil
-	return rdb.Set("token_user"+fmt.Sprint(userID), token, 0).Err()
+	return rdb.Set("token_user"+fmt.Sprint(ID), token, 0).Err()
 }
 
-func GetUserToken(userID int64) (string, error) {
-	return rdb.Get("token_user" + fmt.Sprint(userID)).Result()
+func GetUserToken(ID int64) (string, error) {
+	return rdb.Get("token_user" + fmt.Sprint(ID)).Result()
 }
 

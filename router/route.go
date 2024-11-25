@@ -8,8 +8,6 @@ import (
 )
 
 //注册路由
-
-
 func SetupRouter(mode string)(*gin.Engine){
 
 	// 创建路由：使用自定义的日志和panic覆盖中间件
@@ -43,7 +41,20 @@ func SetupRouter(mode string)(*gin.Engine){
 
 	// 使用代码块：社区相关路由
 	{
+		// 获取社区分类列表
 		v1.GET("/community",controller.CommunityHandler)
+		// 获取社区分类详情（路径参数）
+		v1.GET("/community/:id",controller.CommunityDetailHandler)
+	}
+
+	// 帖子相关路由
+	{
+		// 创建帖子
+		v1.POST("/post",controller.CreatePostHandler)
+		// 查询帖子详情
+		v1.GET("/post/:id",controller.GetPostDetailHandler)
+		// 查询贴子列表
+		v1.GET("/post",controller.GetPostListHandler)
 	}
 
 	// 没有路由
@@ -58,3 +69,4 @@ func SetupRouter(mode string)(*gin.Engine){
 	return r
 
 }
+
