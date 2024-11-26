@@ -13,7 +13,7 @@ import (
 type ResponseData struct {
 	Code ResCode    `json:"code"` // 自定义的code
 	Msg  any   `json:"msg"`  // 自定义的msg
-	Data any 	`json:"data"`// 自定义的数据
+	Data any 	`json:"data"`// 自定义的数据  ,omitempty可忽略空值不展示  Data any 	`json:"data,omitempty"`
 }
 
 

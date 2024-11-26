@@ -775,3 +775,163 @@
 {"level":"INFO","time":"2024-11-25T22:37:41.948+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"page=2&size=2","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0018296}
 {"level":"DEBUG","time":"2024-11-25T22:40:22.669+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
 {"level":"INFO","time":"2024-11-25T22:40:27.578+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"page=2&size=2","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0021427}
+{"level":"DEBUG","time":"2024-11-25T22:41:10.968+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T13:21:39.378+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T13:22:20.746+0800","caller":"logger/logger.go:85","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.010612}
+{"level":"DEBUG","time":"2024-11-26T15:47:31.321+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T15:47:45.665+0800","caller":"logger/logger.go:85","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005027}
+{"level":"INFO","time":"2024-11-26T15:47:50.315+0800","caller":"logger/logger.go:85","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0019374}
+{"level":"INFO","time":"2024-11-26T15:48:09.651+0800","caller":"logger/logger.go:85","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-26T15:48:26.917+0800","caller":"logger/logger.go:85","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0012325}
+{"level":"INFO","time":"2024-11-26T15:48:55.442+0800","caller":"logger/logger.go:85","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010336}
+{"level":"INFO","time":"2024-11-26T15:50:00.085+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0035811}
+{"level":"INFO","time":"2024-11-26T15:56:26.119+0800","caller":"logger/logger.go:85","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0020968}
+{"level":"INFO","time":"2024-11-26T15:56:30.088+0800","caller":"logger/logger.go:85","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011924}
+{"level":"DEBUG","time":"2024-11-26T15:59:59.623+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:02:50.806+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:02:58.705+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0}
+{"level":"INFO","time":"2024-11-26T16:03:13.718+0800","caller":"logger/logger.go:85","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010641}
+{"level":"INFO","time":"2024-11-26T16:03:32.499+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0034824}
+{"level":"INFO","time":"2024-11-26T16:04:19.745+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0027034}
+{"level":"INFO","time":"2024-11-26T16:04:28.512+0800","caller":"logger/logger.go:85","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010465}
+{"level":"INFO","time":"2024-11-26T16:04:38.435+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0104127}
+{"level":"INFO","time":"2024-11-26T16:05:46.276+0800","caller":"logger/logger.go:85","msg":"/api/v1/post/583203762978426880","status":200,"method":"GET","path":"/api/v1/post/583203762978426880","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015655}
+{"level":"DEBUG","time":"2024-11-26T16:08:56.445+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:09:04.677+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:09:17.806+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:10:25.370+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010337}
+{"level":"INFO","time":"2024-11-26T16:10:38.242+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0030905}
+{"level":"DEBUG","time":"2024-11-26T16:11:02.274+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:11:05.314+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:11:11.478+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:11:15.357+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:11:18.274+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:11:25.297+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:11:32.500+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0038308}
+{"level":"INFO","time":"2024-11-26T16:11:36.513+0800","caller":"logger/logger.go:85","msg":"/api/v1/post/583203762978426880","status":200,"method":"GET","path":"/api/v1/post/583203762978426880","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010461}
+{"level":"DEBUG","time":"2024-11-26T16:12:13.711+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:12:22.955+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:12:31.984+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0109509}
+{"level":"INFO","time":"2024-11-26T16:12:38.774+0800","caller":"logger/logger.go:85","msg":"/api/v1/post/583203762978426880","status":200,"method":"GET","path":"/api/v1/post/583203762978426880","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0016668}
+{"level":"INFO","time":"2024-11-26T16:12:41.546+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0027284}
+{"level":"INFO","time":"2024-11-26T16:14:54.119+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005059}
+{"level":"INFO","time":"2024-11-26T16:15:09.489+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.001043}
+{"level":"DEBUG","time":"2024-11-26T16:15:35.162+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:15:38.717+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.001023}
+{"level":"INFO","time":"2024-11-26T16:17:35.935+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005049}
+{"level":"INFO","time":"2024-11-26T16:19:27.918+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006605}
+{"level":"DEBUG","time":"2024-11-26T16:20:54.080+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:20:57.909+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011685}
+{"level":"INFO","time":"2024-11-26T16:21:06.855+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006321}
+{"level":"INFO","time":"2024-11-26T16:21:15.503+0800","caller":"logger/logger.go:85","msg":"/api/v1/post","status":200,"method":"GET","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.002723}
+{"level":"INFO","time":"2024-11-26T16:21:43.771+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005039}
+{"level":"DEBUG","time":"2024-11-26T16:22:13.675+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:22:45.207+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:23:06.529+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:23:08.959+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010283}
+{"level":"INFO","time":"2024-11-26T16:23:21.501+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0007008}
+{"level":"INFO","time":"2024-11-26T16:23:58.249+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005621}
+{"level":"DEBUG","time":"2024-11-26T16:24:14.302+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:24:17.614+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0012419}
+{"level":"INFO","time":"2024-11-26T16:26:14.376+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005413}
+{"level":"DEBUG","time":"2024-11-26T16:28:41.575+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:28:46.387+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011904}
+{"level":"DEBUG","time":"2024-11-26T16:29:40.839+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T16:29:41.997+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010226}
+{"level":"DEBUG","time":"2024-11-26T16:30:53.214+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:32:15.827+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:32:23.759+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:32:39.185+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T16:32:39.186+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015492}
+{"level":"DEBUG","time":"2024-11-26T16:33:34.033+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:33:38.008+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:34:33.813+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T16:34:33.813+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0012016}
+{"level":"DEBUG","time":"2024-11-26T16:35:11.743+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T16:35:11.744+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.00104}
+{"level":"DEBUG","time":"2024-11-26T16:35:46.905+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T16:35:46.906+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010217}
+{"level":"DEBUG","time":"2024-11-26T16:36:07.728+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T16:36:07.728+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011464}
+{"level":"DEBUG","time":"2024-11-26T16:36:17.955+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:36:17.955+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011449}
+{"level":"DEBUG","time":"2024-11-26T16:36:37.775+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:36:37.775+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005037}
+{"level":"DEBUG","time":"2024-11-26T16:37:24.166+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:37:38.640+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:37:50.887+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:38:14.523+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:40:34.738+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:40:38.172+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:40:40.237+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:40:48.558+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:40:56.213+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:41:35.271+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:41:35.271+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015367}
+{"level":"DEBUG","time":"2024-11-26T16:41:55.658+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:41:55.658+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005057}
+{"level":"DEBUG","time":"2024-11-26T16:42:57.075+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:42:59.590+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:43:24.270+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:44:05.134+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:44:16.322+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:45:06.549+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:45:15.871+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:45:15.872+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015668}
+{"level":"DEBUG","time":"2024-11-26T16:45:51.448+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:46:01.313+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:46:07.553+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:46:07.553+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0015826}
+{"level":"DEBUG","time":"2024-11-26T16:54:02.756+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T16:54:05.509+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:54:05.509+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0012524}
+{"level":"DEBUG","time":"2024-11-26T16:54:29.461+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:54:29.461+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011461}
+{"level":"DEBUG","time":"2024-11-26T16:54:34.837+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:54:34.837+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0006055}
+{"level":"DEBUG","time":"2024-11-26T16:54:51.671+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T16:54:51.671+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010288}
+{"level":"DEBUG","time":"2024-11-26T16:55:24.955+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T16:55:24.955+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010907}
+{"level":"DEBUG","time":"2024-11-26T16:55:33.777+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T16:55:33.777+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010236}
+{"level":"DEBUG","time":"2024-11-26T16:55:58.878+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T16:55:58.878+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.001037}
+{"level":"DEBUG","time":"2024-11-26T16:56:14.491+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T16:56:14.491+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0016086}
+{"level":"DEBUG","time":"2024-11-26T16:56:46.186+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T16:56:46.186+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0005063}
+{"level":"DEBUG","time":"2024-11-26T17:02:52.120+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T17:02:52.120+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0018214}
+{"level":"DEBUG","time":"2024-11-26T17:03:59.675+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T17:03:59.675+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010547}
+{"level":"DEBUG","time":"2024-11-26T17:04:06.019+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T17:04:06.019+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011082}
+{"level":"DEBUG","time":"2024-11-26T17:06:51.555+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:06:55.717+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:01.805+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:14.247+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:15.421+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"INFO","time":"2024-11-26T17:07:15.465+0800","caller":"mysql/mysql.go:43","msg":"MySQL close success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:17.023+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:23.576+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:30.197+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:33.961+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:07:51.300+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:08:35.231+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:08:55.239+0800","caller":"bluebell/main.go:48","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-11-26T17:09:04.314+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T17:09:04.314+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011676}
+{"level":"DEBUG","time":"2024-11-26T17:09:12.963+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":0}
+{"level":"INFO","time":"2024-11-26T17:09:12.964+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010291}
+{"level":"DEBUG","time":"2024-11-26T17:09:32.861+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":1}
+{"level":"INFO","time":"2024-11-26T17:09:32.862+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010849}
+{"level":"DEBUG","time":"2024-11-26T17:09:41.052+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T17:09:41.052+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011102}
+{"level":"DEBUG","time":"2024-11-26T17:09:46.582+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":580979245237407744,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T17:09:46.583+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010628}
+{"level":"INFO","time":"2024-11-26T17:09:58.410+0800","caller":"logger/logger.go:85","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010295}
+{"level":"DEBUG","time":"2024-11-26T17:10:18.978+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":581066560030904320,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T17:10:18.979+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0010755}
+{"level":"DEBUG","time":"2024-11-26T17:10:24.858+0800","caller":"logic/vote.go:41","msg":"VoteForPost","userID":581066560030904320,"postID":"583203762978426880","direction":-1}
+{"level":"INFO","time":"2024-11-26T17:10:24.858+0800","caller":"logger/logger.go:85","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Apifox/1.0.0 (https://apifox.com)","errors":"","cost":0.0011471}

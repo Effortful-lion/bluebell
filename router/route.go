@@ -57,6 +57,12 @@ func SetupRouter(mode string)(*gin.Engine){
 		v1.GET("/post",controller.GetPostListHandler)
 	}
 
+	// 帖子细节相关路由
+	{
+		// 帖子投票
+		v1.POST("/vote",controller.PostVoteHandler)
+	}
+
 	// 没有路由
 	r.NoRoute(func(ctx *gin.Context) {
 		ctx.JSON(404,gin.H{
