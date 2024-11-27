@@ -60,16 +60,43 @@ func GetPostDetailHandler(c *gin.Context){
 	ResponseSuccess(c,data)
 }
 
-// 获取帖子列表: 分页查询（另外的要求）
-func GetPostListHandler(c *gin.Context) {
-	page,size := getPageInfo(c)
-	// 获取数据
-	data, err := logic.GetPostList(page, size)
+// // 获取帖子列表: 分页查询（另外的要求）【没用了，可以作为学习分页查询】
+// func GetPostListHandler(c *gin.Context) {
+// 	page,size := getPageInfo(c)
+// 	// 获取数据
+// 	data, err := logic.GetPostList(page, size)
+// 	if err != nil {
+// 		zap.L().Error("获取帖子列表失败", zap.Error(err))
+// 		ResponseError(c, CodeServerBusy)
+// 		return
+// 	}
+// 	// 返回数据
+// 	ResponseSuccess(c, data)
+// }
+
+// 根据前端传来的参数动态的获取帖子列表
+// 按照创建时间排序 或者 按照分数排序
+func GetPostListHandler2(c *gin.Context){
+	// 1. 获取参数: 初始化结构体时，指定默认参数
+	p := &models.ParamPostList{
+		Page: models.DefaultPage,
+		Size: models.DefaultSize,
+		Order: models.OrderTime,
+	}
+
+	if err := c.ShouldBindQuery(p); err != nil{
+		zap.L().Error("GetPostListHandler2() with invalid params")
+		ResponseError(c, CodeInvalidParam)
+		return
+	}
+
+	// 2. 获取数据
+	data, err := logic.GetPostListSelect(p)
 	if err != nil {
 		zap.L().Error("获取帖子列表失败", zap.Error(err))
 		ResponseError(c, CodeServerBusy)
 		return
 	}
-	// 返回数据
+	// 3. 返回响应
 	ResponseSuccess(c, data)
 }

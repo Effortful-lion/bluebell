@@ -53,14 +53,16 @@ func SetupRouter(mode string)(*gin.Engine){
 		v1.POST("/post",controller.CreatePostHandler)
 		// 查询帖子详情
 		v1.GET("/post/:id",controller.GetPostDetailHandler)
-		// 查询贴子列表
-		v1.GET("/post",controller.GetPostListHandler)
+		// 查询贴子列表【没用了】
+		//v1.GET("/post",controller.GetPostListHandler)
 	}
 
-	// 帖子细节相关路由
+	// 帖子细节(分数等)相关路由
 	{
 		// 帖子投票
 		v1.POST("/vote",controller.PostVoteHandler)
+		// 根据帖子分数/创建时间，查询帖子列表(所有帖子)
+		v1.GET("/post2",controller.GetPostListHandler2)
 	}
 
 	// 没有路由

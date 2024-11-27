@@ -13,7 +13,7 @@ import (
 func PostVoteHandler(c *gin.Context) {
 	// 获取参数和参数校验：用户 + 帖子 + 投票选项
 	p := new(models.ParamVoteData)
-	// TODO:未获得参数:因为在请求结构体中，本身是string的变量在json块中又被声明为string了
+	// 未获得参数:因为在请求结构体中，本身是string的变量在json块中又被声明为string了
 	if err := c.ShouldBindJSON(p); err != nil {
 		errs, ok := err.(validator.ValidationErrors)
 		if !ok{

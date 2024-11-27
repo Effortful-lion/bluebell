@@ -10,7 +10,6 @@ var (
 	KeyPostScoreZSet = "post:score"		// 按投票分数排序的投票结果,参数是帖子id（ post_id : score ）
 	KeyPostVotedZSetPF = "post:voted:"		// 记录用户投票状态和投票的类型，1表示赞成，-1表示反对,参数是post_id
 	KeyCommunitySetPF = "community:" // set;保存每个分区下帖子的id
-	// TODO:这里记录投票状态的设计，不理解
 )
 
 // 返回加上前缀的rediskey

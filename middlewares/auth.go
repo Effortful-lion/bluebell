@@ -7,7 +7,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"bluebell/controller"
 	"bluebell/dao/redis"
-	"fmt"
 	"bluebell/dao/mysql"
 	//"time" 
 )
@@ -85,7 +84,6 @@ func OnlyOneTokenMiddleware() func(c *gin.Context) {
 		// 从请求头中获取新token
 		new_token := c.Request.Header.Get("Authorization")
 		new_token = strings.TrimPrefix(new_token, "Bearer ")
-		fmt.Println(new_token)
 	// 判断新旧token是否一致
 		//如果不一致, 返回未登录//TODO:按道理应该有个验证码的业务，来确定使用哪一个token（这里默认可以“相互顶号”）
 		userID,_:= c.Get(controller.ContextUserIDKey)
