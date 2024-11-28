@@ -2,9 +2,14 @@ package router
 
 import (
 	"bluebell/controller"
+	docs "bluebell/docs" // 千万不要忘了导入把你上一步生成的docs
 	"bluebell/logger"
 	"bluebell/middlewares"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
+	swaggerfiles "github.com/swaggo/files" // swagger embed files
+	gs "github.com/swaggo/gin-swagger"     // gin-swagger middleware
 )
 
 //注册路由
@@ -18,20 +23,43 @@ func SetupRouter(mode string)(*gin.Engine){
 	//gin.SetMode(gin.ReleaseMode)  //设置gin框架为发布模式：不会有gin-debug信息
 	r := gin.New()
 
+	docs.SwaggerInfo.BasePath = "/api/v1"
+
+	//配置跨域中间件: 否则会导致 前端发送：Options的预检请求
+    r.Use(func(c *gin.Context) {
+        c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+        c.Writer.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+        c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type,Authorization")
+        if c.Request.Method == "OPTIONS" {
+            c.AbortWithStatus(http.StatusNoContent)
+            return
+        }
+        c.Next()
+    })
+
 	// 设置我信任的代理：设置一个具体的值来明确指定可信任的代理(可选)
 	trustedProxies := []string{"192.168.1.0/24"}
     r.SetTrustedProxies(trustedProxies)
 
+	// gin-swagger同时还提供了DisablingWrapHandler函数，方便我们通过设置某些环境变量来禁用Swagger。例如：
+	// r.GET("/swagger/*any", gs.DisablingWrapHandler(swaggerFiles.Handler, "NAME_OF_ENV_VARIABLE"))
+
+
 	r.Use(logger.GinLogger(),logger.GinRecovery(true))
 
+	//加上这一段，会有什么效果？：设置api的根路径
+	//docs.SwaggerInfo.BasePath = "/api/v1"
+	
 	// 设置路由组，有利于后期的扩展
 	v1 := r.Group("/api/v1")
 
-	// 注册业务路由
-	v1.POST("/signup",controller.SignUpHandler)
-
-	// 登录业务路由
-	v1.POST("/login",controller.LoginHandler)
+	{
+		// 注册业务路由
+		v1.POST("/signup",controller.SignUpHandler)
+		// 登录业务路由
+		v1.POST("/login",controller.LoginHandler)
+	}
+	
 
 	// 一切访问资源的路由
 	// token 放在了一个 名为 Authorization 的 http 请求头中
@@ -72,6 +100,8 @@ func SetupRouter(mode string)(*gin.Engine){
 			"message":"404 not found",
 		})
 	})
+
+	r.GET("/swagger/*any",  gs.WrapHandler(swaggerfiles.Handler))
 	
 	// 返回
 	return r

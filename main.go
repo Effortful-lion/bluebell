@@ -29,6 +29,20 @@ import (
 
 //go中，包下的方法调用时，只需要导入包就可以，至于包中需要的其他依赖，在那个包中已经被声明过了
 
+// @title 这里写标题
+// @version 1.0
+// @description 这里写描述信息
+// @termsOfService http://swagger.io/terms/
+
+// @contact.name lion
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @host 127.0.0.1:8080
+// @BasePath /api/v1
 func main(){
 //初始化错误，全部return
 

@@ -31,11 +31,12 @@ type ParamVoteData struct {
 	Direction int8 `json:"direction,string" binding:"oneof=-1 0 1"` // 赞成票(1)还是反对票(-1)还是取消投票(0)
 }
 
-// 接收url格式参数： /api/v1/post2?page=1&size=10&order=time
+// ParamPostList 获取帖子列表query string参数
 type ParamPostList struct {
-	CommunityID int64 `json:"community_id" form:"community_id"`		// 可以为空，如果为空，则查询所有帖子，否则查询相应社区的帖子
-	Page        int64 `json:"page" form:"page"`
-	Size        int64 `json:"size" form:"size"`
-	Order       string `json:"order" form:"order"`
+	CommunityID int64  `json:"community_id" form:"community_id"`   // 可以为空,如果为空，则查询所有帖子，否则查询相应社区的帖子
+	Page        int64  `json:"page" form:"page" example:"1"`       // 页码
+	Size        int64  `json:"size" form:"size" example:"10"`      // 每页数据量
+	Order       string `json:"order" form:"order" example:"score"` // 排序依据
 }
+
 

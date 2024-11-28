@@ -8,8 +8,18 @@ import (
 	"go.uber.org/zap"
 )
 
-// 社区相关的接口
 
+// CommunityHandler 查询社区列表
+// @Summary 查询社区列表
+// @Description 查询社区列表
+// @Tags 社区相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param Authorization header string false "Bearer 用户令牌"
+// @Security ApiKeyAuth
+// @Success 200 {object} _ResponseCommunityList
+// @Router /community [get]
+// 社区相关的接口
 func CommunityHandler(c *gin.Context){
 	// 作用：向前端提供一个列表（slice），内容是 社区的(id和名称)
 	// 通常controller会先处理参数等...这里没有，可以直接调用然后开始业务
@@ -24,6 +34,17 @@ func CommunityHandler(c *gin.Context){
 	ResponseSuccess(c,list)
 }
 
+// CommunityHandler 查询社区详情列表
+// @Summary 查询社区详情列表
+// @Description 查询社区详情列表
+// @Tags 社区相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param Authorization header string false "Bearer 用户令牌"
+// @Param id path int true "社区ID"
+// @Security ApiKeyAuth
+// @Success 200 {object} _ResponseCommunityDetail
+// @Router /community/{id} [get]
 func CommunityDetailHandler(c *gin.Context){
 	// 获取社区详情
 	// 1. 获取社区id(路径参数)
