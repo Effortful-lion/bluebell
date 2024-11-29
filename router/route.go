@@ -6,10 +6,13 @@ import (
 	"bluebell/logger"
 	"bluebell/middlewares"
 	"net/http"
+	//"time"
 
 	"github.com/gin-gonic/gin"
 	swaggerfiles "github.com/swaggo/files" // swagger embed files
 	gs "github.com/swaggo/gin-swagger"     // gin-swagger middleware
+
+	"github.com/gin-contrib/pprof"
 )
 
 //注册路由
@@ -45,7 +48,9 @@ func SetupRouter(mode string)(*gin.Engine){
 	// r.GET("/swagger/*any", gs.DisablingWrapHandler(swaggerFiles.Handler, "NAME_OF_ENV_VARIABLE"))
 
 
-	r.Use(logger.GinLogger(),logger.GinRecovery(true))
+	// 对全网的请求限速：可以对r；或者可以对api进行限速
+	//r.Use(logger.GinLogger(),logger.GinRecovery(true),middlewares.RateLimitMiddleware(2 * time.Second, 1))
+	r.Use(logger.GinLogger(),logger.GinRecovery(true),middlewares.RateLimitMiddleware2(1))
 
 	//加上这一段，会有什么效果？：设置api的根路径
 	//docs.SwaggerInfo.BasePath = "/api/v1"
@@ -102,6 +107,8 @@ func SetupRouter(mode string)(*gin.Engine){
 	})
 
 	r.GET("/swagger/*any",  gs.WrapHandler(swaggerfiles.Handler))
+
+	pprof.Register(r)	// 注册pprof相关路由
 	
 	// 返回
 	return r

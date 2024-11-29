@@ -46,5 +46,5 @@ type _RequestCreatePost struct {
 
 type _RequestVotePost struct {
 	PostID string `json:"post_id"`
-	Direction int8 `json:"direction,string""`
+	Direction int8 `json:"direction,string"`
 }
