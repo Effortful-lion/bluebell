@@ -5,11 +5,12 @@ import (
 	"bluebell/logic"
 	"bluebell/models"
 	"errors"
+	"fmt"
+
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator"
 	"go.uber.org/zap"
 )
-
 
 // 用户登录
 func LoginHandler(c *gin.Context) {
@@ -38,8 +39,16 @@ func LoginHandler(c *gin.Context) {
 		ResponseError(c,CodeInvalidPassword)
 		return
 	}else{
+		userID,_ := mysql.GetUserByName(p.Username)
 		// 登录成功
-		ResponseSuccess(c,token)
+		ResponseSuccess(c,gin.H{
+			"user_id": fmt.Sprintf("%d", userID),
+			"user_name": p.Username,
+			"token": token,
+		})
+		
+		//ResponseSuccess(c,token)
+
 		return
 	}
 }
