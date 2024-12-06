@@ -9,18 +9,17 @@ import (
 )
 
 // 帖子相关
-
-// TODO:这个post无法显示出来
-// 创建帖子接口
+// CreatePostHandler 创建帖子接口
 // @Summary 创建帖子接口
-// @Description 创建帖子接口 (base or vip)
+// @Description 创建帖子接口
 // @Tags 帖子相关接口
 // @Accept application/json
 // @Produce application/json
-// @Param req body models.Post true 接收创建帖子接口参数
+// @Param Authorization header string false "Bearer 用户令牌"
+// @Param Object body models.Post true "创建帖子"
+// @Security ApiKeyAuth
 // @Success 200 {string} string "ok"
-// @Failure 400 {string} string "bad request"
-// @Failure 500 {string} string "Internal Server Error"
+// @Failure 400 {string} web.APIError "bad request"
 // @Router /post [post]
 // 创建帖子
 func CreatePostHandler(c *gin.Context) {

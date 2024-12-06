@@ -9,13 +9,13 @@ import (
 	"github.com/go-playground/validator"
 )
 
-// TODO: post类的接口都无法显示
+
 // @Summary 帖子投票接口
 // @Description 帖子投票接口
 // @Tags 帖子投票接口
 // @Accept application/json
 // @Produce application/json
-// @Param req body models.ParamVoteData true 接受帖子投票接口参数
+// @Param req body models.ParamVoteData true "接受帖子投票接口参数"
 // @Success 200 {string} string "ok"
 // @Failure 400 {string} string "bad request"
 // @Failure 500 {string} string "Internal Server Error"

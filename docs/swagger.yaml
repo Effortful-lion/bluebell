@@ -122,6 +122,45 @@ definitions:
       name:
         type: string
     type: object
+  models.ParamVoteData:
+    properties:
+      direction:
+        description: 赞成票(1)还是反对票(-1)还是取消投票(0)
+        enum:
+        - -1
+        - 0
+        - 1
+        example: "0"
+        type: string
+      post_id:
+        description: UserID      从请求中获取当前用户
+        type: string
+    required:
+    - post_id
+    type: object
+  models.Post:
+    properties:
+      author_id:
+        description: TODO:在请求中没有问题，但是会出现 响应类型不符的问题：在于json中的“string”
+        type: integer
+      community_id:
+        type: integer
+      content:
+        type: string
+      create_time:
+        type: string
+      id:
+        example: "0"
+        type: string
+      status:
+        type: integer
+      title:
+        type: string
+    required:
+    - community_id
+    - content
+    - title
+    type: object
 host: 127.0.0.1:8080
 info:
   contact:
@@ -185,6 +224,38 @@ paths:
       summary: 查询社区详情列表
       tags:
       - 社区相关接口
+  /post:
+    post:
+      consumes:
+      - application/json
+      description: 创建帖子接口
+      parameters:
+      - description: Bearer 用户令牌
+        in: header
+        name: Authorization
+        type: string
+      - description: 创建帖子
+        in: body
+        name: Object
+        required: true
+        schema:
+          $ref: '#/definitions/models.Post'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: bad request
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 创建帖子接口
+      tags:
+      - 帖子相关接口
   /post/{id}:
     get:
       consumes:
@@ -253,4 +324,34 @@ paths:
       summary: 升级版帖子列表接口
       tags:
       - 帖子相关接口
+  /vote:
+    post:
+      consumes:
+      - application/json
+      description: 帖子投票接口
+      parameters:
+      - description: 接受帖子投票接口参数
+        in: body
+        name: req
+        required: true
+        schema:
+          $ref: '#/definitions/models.ParamVoteData'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+        "400":
+          description: bad request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      summary: 帖子投票接口
+      tags:
+      - 帖子投票接口
 swagger: "2.0"
